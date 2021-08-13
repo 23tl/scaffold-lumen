@@ -21,7 +21,7 @@ class ExampleController extends Controller
 
     public function test(BaseRequest $request)
     {
-        Log::info('这是一个日志', $request->al1l());
+        Log::info('这是一个日志', $request->all());
 
         return ['test' => $request->input('name')];
     }
